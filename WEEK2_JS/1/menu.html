@@ -1,0 +1,76 @@
+<html lang="en"><head>
+
+<meta charset="UTF-8">
+
+<title>Chu vi và Diện tích</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="main.js"></script>
+
+</head>
+  
+  <body translate="no">
+    <div class="container-fluid">
+    <ul class="nav nav-tabs">
+      <li><a data-toggle="tab" href="#hinhvuong">Hình vuông</a></li>
+      <li><a data-toggle="tab" href="#hinhtron">Hình tròn</a></li>
+      <li><a data-toggle="tab" href="#hinhtamgiac">Hình tam giác</a></li>
+      <li><a data-toggle="tab" href="#hinhthang">Hình thang</a></li>
+    </ul>
+  
+    <div class="tab-content">
+
+      <div id="hinhvuong" class="tab-pane fade">
+        <h3>Hình vuông</h3>
+        <form name ="hinhvuongform" method="post">
+            <input type="number" name="canh" id="canh" placeholder="cạnh"><br>
+            <input type="button" value="kết quả" onclick="hinhvuong()">
+            <p id="chuvihv"></p>
+            <p id="dientichhv"></p>
+            <p id="showerrorhv"></p>
+        </form>
+      </div>
+
+      <div id="hinhtron" class="tab-pane fade">
+        <h3>Hình tròn</h3>
+        <form name ="hinhtronform" method="post">
+            <input type="number" name="bankinh" id="bankinh" placeholder="bán kính"><br>
+            <input type="button" value="kết quả" onclick="hinhtron()">
+            <p id="chuviht"></p>
+            <p id="dientichht"></p>
+            <p id="showerrorhtr"></p>
+        </form>
+      </div>
+
+      <div id="hinhtamgiac" class="tab-pane fade">
+        <h3>Hình tam giác</h3>
+        <form name="hinhtamgiacform" method="post">
+            <input type="number" name="canh a" id="canh a" placeholder="Cạnh a"><br>
+            <input type="number" name="canh b" id="canh b" placeholder="Cạnh b"><br>
+            <input type="number" name="canh c" id="canh c" placeholder="Cạnh c"><br>
+            <input type="button" value="Kết quả" onclick="hinhtamgiac()">
+            <p id="chuvitg"></p>
+            <p id="dientichtg"></p>
+            <p id="showerrortg"></p>
+        </form>
+      </div>
+
+      <div id="hinhthang" class="tab-pane fade">
+        <h3>Hình thang </h3>
+        <form name ="hinhthangform" method="post">
+            <input type="number" name="daylon" id="daylon" placeholder="Đáy lớn"><br>
+            <input type="number" name="daybe" id ="daybe"placeholder="Đáy bé"><br>
+            <input type="number" name="canhben1" id ="canhben1"placeholder="Cạnh bên 1"><br>
+            <input type="number" name="canhben2" id ="canhben2"placeholder="Cạnh bên 2"><br>
+            <input type="number" name="chieucao" id ="chieucao"placeholder="Chiều cao"><br>
+            <input type="button" value="kết quả" onclick="hinhthang()">
+            <p id="chuvi"></p>
+            <p id="dientich"></p>
+            <p id="showerrorhth"></p>
+        </form>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
