@@ -73,10 +73,10 @@ $link = mysqli_connect('mysql', 'root', 'password', 'web', "3306") or die ("Khon
 									</a>
 									<ul class="account_selection">	
 										<?php
-										if($_SESSION['username']) echo "<a class='dropdown-item' href='dangxuat.php'>Logout</a>";
+										if($_SESSION['username']) echo "<a class='dropdown-item' href='logout.php'>Logout</a>";
 										else{
-											echo "<a class='dropdown-item' href='dangki.php'>Register</a>
-											<a class='dropdown-item' href='dangnhap.php'>Sign In</a>";
+											echo "<a class='dropdown-item' href='register.php'>Register</a>
+											<a class='dropdown-item' href='login.php'>Sign In</a>";
 										} 
 										?>
 										

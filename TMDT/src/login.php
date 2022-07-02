@@ -61,7 +61,7 @@ if ($username != $row['username']) {
 </head>
 <body>
     <div class="log-form">
-        <form  action="DangNhap.php" method="post">
+        <form  action="login.php" method="post">
             <div class="main">
                 <h1>Đăng nhập</h1>
             </div>            

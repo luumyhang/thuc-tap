@@ -21,7 +21,7 @@ if (isset($_POST['dangkiBtn'])) {
     } else{
         $sql= "INSERT INTO users (username, email, password) VALUES ('$username','$email','$password')";
         if ($link->query($sql) === TRUE) {
-            header("location:dangnhap.php");
+            header("location:login.php");
         } else {
             echo '<script language="javascript">alert("Có lỗi trong quá trình xử lý");</script>';
         }
@@ -43,7 +43,7 @@ if (isset($_POST['dangkiBtn'])) {
 </head>
 <body>
     <div class="log-form">
-        <form action="dangki.php" method="post">
+        <form action="register.php" method="post">
             <div class="main">
                 <h1>Đăng Ký</h1>
             </div>
